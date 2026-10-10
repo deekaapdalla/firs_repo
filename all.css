@@ -1,0 +1,289 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9ff;
+    color: #222;
+}
+
+body.dark-mode {
+    background-color: #111827;
+    color: #f3f4f6;
+}
+
+html, body {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body.dark-mode nav {
+    background-color: #1f2937;
+}
+
+body.dark-mode #projects article,
+body.dark-mode #Skills li,
+body.dark-mode #contactform input,
+body.dark-mode #contactform textarea {
+    background-color: #1f2937;
+    color: #f3f4f6;
+    border-color: #4b5563;
+}
+
+body.dark-mode a {
+    color: #f3f4f6;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+nav h2 {
+    margin: 0;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 25px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd166;
+}
+
+#Home {
+    padding: 120px 20px 60px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+#Home h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #5b2aa8;
+}
+
+#Home h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#Home p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #555;
+    max-width: 600px;
+}
+
+#Home a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #5b2aa8;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+#Home a:hover {
+    background-color: #4a1f8c;
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #5b2aa8;
+}
+
+#Skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 0;
+    margin: 0;
+}
+
+#Skills li {
+    background-color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+#projects article {
+    background-color: white;
+    padding: 25px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+article h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #5b2aa8;
+}
+
+article p {
+    margin: 0;
+    color: #555;
+}
+
+article:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+nav button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    background: #5b2aa8;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+    }
+
+    #Skills ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #Home h1 {
+        font-size: 38px;
+    }
+}
+
+#contact {
+    background-color: #f8f9ff;
+    padding-top: 120px;
+}
+
+#contactform {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#contactform label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#contactform input,
+#contactform textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#contactform button {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #5b2aa8;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#contactform button:hover {
+    background-color: #3f1c78;
+}
+
+#formmessage {
+    margin-top: 15px;
+    font-weight: bold;
+}
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 5px solid #5b2aa8;
+}
+
+#Home h1 {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
